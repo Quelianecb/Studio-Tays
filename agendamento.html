@@ -112,6 +112,10 @@
             font-size: 15px;
             /*taanho da palavra*/
         }
+        textarea{
+            width: 400px;
+            height: 100px;
+        }
 
         .botao {
             text-decoration: none;
@@ -143,24 +147,9 @@
                     <label for="itelefone" class="labelinput">Telefone</label>
                 </div>
                 <br>
-                <p>Sexo :</p>
-                <input type="radio" name="gender" id="ifeminino" value="feminino" required>
-                <label for="ifeminino">Feminino </label>
-                <input type="radio" name="gender" id="imasculino" value="masculino" required>
-                <label for="imasculino">Masculino</label>
-                <input type="radio" name="gender" id="ioutro" value="outro" required>
-                <label for="ioutro">Outros</label>
-
-                <br>
-                <!--ADICIONAR AGENDA AQUI-->
-                <div class="data">
-                    <input type="datetime-local" name="day" id="idata"  required>
-                    <label for="idata">Agende seu (dia e horário):</label>
-                    
-
-                </div>
-
-                <br>
+                
+                <textarea class="text" name="message"> Dia e horário :</textarea>
+                
                 <!--value vem do email  ">-->
 
                 <input type="hidden" name="accessKey" value="c1cb145e-4ac1-4ca7-b691-1442b262fac1">
