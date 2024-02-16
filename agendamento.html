@@ -77,6 +77,7 @@
             left: 0px;
             pointer-events: none;
             transition: .5s;
+            font-size: 20px;
 
         }
 
@@ -84,7 +85,7 @@
         .inputUser:valid~.labelinput {
             /*aqui que acontece a açáo da palavra subir*/
             top: -20px;
-            font-size: 12px;
+            font-size: 18px;
             color: white;
         }
 
@@ -96,27 +97,6 @@
             outline: none;
             font-size: 15px;
         }
-
-        #submit {
-            background-image: linear-gradient(to right, rgba(0, 92, 197, 0.294), rgb(90, 20, 220));
-            width: 100%;
-            /*largura */
-            padding: 15px;
-            /*altura*/
-            color: white;
-            /*cor da palavra*/
-            cursor: pointer;
-            /*quando vira uma mão no cursor*/
-            border-radius: 10px;
-            /*arrendondamento na borda*/
-            font-size: 15px;
-            /*taanho da palavra*/
-        }
-        textarea{
-            width: 400px;
-            height: 100px;
-        }
-
         .botao {
             text-decoration: none;
             color: black;
@@ -132,9 +112,9 @@
 
 <body>
     <div class="box">
-        <form action="https://api.staticforms.xyz/submit" method="post">
+        <form action="https://formsubmit.co/tayane.s.c@hotmail.com" method="post">
             <fieldset>
-        <legend><b>Agende seu horario </b></legend>
+        <legend> <b>Agende seu horario por aqui </b ></legend>
 
                 <div class="inputBox">
                     <input type="text" name="name" id="inome" class="inputUser" required>
@@ -147,14 +127,20 @@
                     <label for="itelefone" class="labelinput">Telefone</label>
                 </div>
                 <br>
+                <div class="inputBox">
+                    <input type="datetime-local" name="data" id="idata" class="inputUser" required> 
+                     <label for="idata" class="labelinput">Dia</label>
+                 </div>
+                 <br>
+                 <input type="hidden" name="_captcha" value="false">
+                 <input type="hidden" name="_next" value="http://127.0.0.1:5501/mensagem.html">
                 
-                <textarea class="text" name="message"> Dia e horário :</textarea>
                 
-                <!--value vem do email  ">-->
+                <!--value vem do email  ">
 
-                <input type="hidden" name="accessKey" value="c1cb145e-4ac1-4ca7-b691-1442b262fac1">
+                
             
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/mensagem.html"> <!-- Optional -->
+               <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/mensagem.html">--> <!-- Optional -->
                 <input type="submit" value="Enviar" class="botao" />
 
 
