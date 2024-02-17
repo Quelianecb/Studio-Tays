@@ -17,12 +17,15 @@
             height: 100vh;
             font-family: Arial, Helvetica, sans-serif;
 
-            background-color: blueviolet;
-            background-image: url(img/logo01.png);
+            background-color: rgba(226, 43, 177, 0.525);
+            
             background-size: cover;
             position: center top;
             background-repeat: no-repeat;
         }
+
+        
+        
 
         .box {
             color: black;
@@ -97,6 +100,7 @@
             outline: none;
             font-size: 15px;
         }
+
         .botao {
             text-decoration: none;
             color: black;
@@ -111,10 +115,11 @@
 </head>
 
 <body>
+    
     <div class="box">
         <form action="https://formsubmit.co/tayane.s.c@hotmail.com" method="post">
             <fieldset>
-        <legend> <b>Agende seu horario por aqui </b ></legend>
+                <legend> <b>Agende seu horario por aqui </b></legend>
 
                 <div class="inputBox">
                     <input type="text" name="name" id="inome" class="inputUser" required>
@@ -123,19 +128,19 @@
                 <br>
 
                 <div class="inputBox">
-                   <input type="text" name="phone" id="itelefone" class="inputUser" required> 
+                    <input type="text" name="phone" id="itelefone" class="inputUser" required>
                     <label for="itelefone" class="labelinput">Telefone</label>
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="datetime-local" name="data" id="idata" class="inputUser" required> 
-                     <label for="idata" class="labelinput">Dia</label>
-                 </div>
-                 <br>
-                 <input type="hidden" name="_captcha" value="false">
-                 <input type="hidden" name="_next" value="http://127.0.0.1:5501/mensagem.html">
-                
-                
+                    <input type="datetime-local" name="data" id="idata" class="inputUser" required>
+                    <label for="idata" class="labelinput">Dia</label>
+                </div>
+                <br>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/mensagem.html">
+
+
                 <!--value vem do email  ">
 
                 
@@ -148,6 +153,7 @@
 
         </form>
     </div>
+
     <a href="index.html" class="botao">Voltar</a>
 
 </body>
